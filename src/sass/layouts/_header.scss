@@ -1,0 +1,55 @@
+.header {
+  background: $color-light;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 15px 0 17px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include media-tablet {
+    padding-left: 24px;
+  }
+}
+
+.header__hamburger {
+  margin-right: 37px;
+  @include media-mobile {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.header__buttons > .button {
+  > .button {
+    margin-left: 14px;
+
+    &:first-child {
+      margin-left: 14px;
+      margin-left: 0;
+    }
+  }
+
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.navigation {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.navigation__link {
+  list-style: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
