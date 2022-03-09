@@ -97,7 +97,6 @@ const plugins = () => {
             ignore: [
               "**/*.js",
               "**/*.ts",
-              "**/*.css",
               "**/*.scss",
               "**/*.sass",
               "**/*.html",
